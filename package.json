@@ -6,9 +6,12 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "tsc": "tsc",
+    "lint": "eslint --ext .ts,.tsx . --max-warnings 0"
   },
   "dependencies": {
+    "@expo-google-fonts/nunito": "^0.2.2",
     "expo": "~47.0.9",
     "expo-status-bar": "~1.4.2",
     "react": "18.1.0",
