@@ -50,6 +50,11 @@ const styles = StyleSheet.create({
     justifyContent: "space-evenly",
     marginBottom: 8,
     width: "100%"
+  },
+  letter: {
+    fontFamily: "ExtraBold",
+    fontSize: SCREEN_WIDTH / 12,
+    textTransform: "uppercase"
   }
 });
 
@@ -121,7 +126,7 @@ interface SquareProps {
 function Square({ letter }: SquareProps) {
   return (
     <View style={styles.squareContainer}>
-      <Text>{letter}</Text>
+      <Text style={styles.letter}>{letter}</Text>
     </View>
   );
 }

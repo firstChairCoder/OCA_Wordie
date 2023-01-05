@@ -22,10 +22,10 @@ export const guesses = [
   },
   {
     id: "4",
-    letters: ["", "", "", "", ""]
+    letters: ["H", "E", "L", "L", "O"]
   },
   {
     id: "5",
-    letters: ["", "", "", "", ""]
+    letters: ["W", "O", "R", "L", "D"]
   }
 ];
