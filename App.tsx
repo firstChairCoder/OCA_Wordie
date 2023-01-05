@@ -1,11 +1,13 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
 import {
   Nunito_400Regular,
   Nunito_600SemiBold,
   Nunito_800ExtraBold,
   useFonts
 } from "@expo-google-fonts/nunito";
+import { NavigationContainer } from "@react-navigation/native";
+import { StatusBar } from "expo-status-bar";
+
+import AppNavigator from "./src/navigation";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -19,20 +21,9 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
-      <Text style={{ fontSize: 32, fontFamily: "SemiBold" }}>
-        Open up App.tsx to start working on your app!
-      </Text>
+    <NavigationContainer>
+      <AppNavigator />
       <StatusBar style="auto" />
-    </View>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    alignItems: "center",
-    backgroundColor: "#fff",
-    flex: 1,
-    justifyContent: "center"
-  }
-});
